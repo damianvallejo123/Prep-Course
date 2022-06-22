@@ -10,13 +10,13 @@ const nuevoNum = 5;
 const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = false;
+const nuevaResta = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = false;
+const nuevaMultiplicacion = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = false;
+const nuevoModulo = true;
 
 
 // En los próximos 22 problemas, deberás completar la función.
@@ -155,7 +155,7 @@ function esPositivo(numero) {
   //Si el número es 0, devuelve false
   if(numero>0)
   {
-    return 'Es Positivo';
+    return 'Es positivo';
   }
   else if(numero<0)
   {

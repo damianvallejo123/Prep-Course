@@ -88,20 +88,20 @@ function colors(color) {
   //Usar el statement Switch.
   switch(color)
   {
-    case blue:
+    case "blue":
       return "This is blue";
       break;
 
-    case red:
+    case "red":
       return "This is red";
       break;
     
-    case green:
+    case "green":
       return "This is green";
       break;
 
-    case orange:
-      return "This is Orange";
+    case "orange":
+      return "This is orange";
       break;
 
     default:
@@ -207,14 +207,19 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  if(numero === 0 || numero === 1)
+  {
+    return false;
+  }
+  
   for(var i = 2; i<10; i++)
   {
     if(i !== numero && numero % i === 0)
     {
-      return "falso";
+      return false;
     }
   }
-  return "true";
+  return true;
 }
 
 function esVerdadero(valor){
@@ -250,7 +255,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  return(numero > 99);
+  return(numero > 99 && 999>=numero);
   
 }
 
@@ -258,12 +263,14 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var i = 1;
   do
   {
-    var vuelta = 1
+    i++;
     numero+=5;
-    vuelta++;
-  } while(i<=8)
+
+  } while(i<=8);
+
   return numero;
 }
 

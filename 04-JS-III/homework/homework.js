@@ -62,11 +62,11 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   var str = "";
-  for(var i = 0; i < array.length-1; i++)
+  for(var i = 0; i < palabras.length-1; i++)
   {
-    str += array[i] + " ";
+    str += palabras[i] + " ";
   }
-  str += array[array.length-1];
+  str += palabras[palabras.length-1];
   return str;
 }
 
@@ -181,13 +181,13 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  if(n === 9 || (n>=90 && n<=99) || (n>=900 || n<=999))
+  if((n === 9) || (n>=90 && n<=99) || (n>=900 && n<=999))
   {
     return true;
   }
   else
   {
-    false;
+    return false;
   }
   
 }
@@ -257,22 +257,17 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var arreglonuevo = [];
-  for(var i = 0; i < numero.length ; i++)
+  var suma = numero;
+  for(var i = 0; i < 10 ; i++)
   {
-    for(var j = 0; j<10 ; j++)
+    suma +=2;
+    if(i === suma)
     {
-      if(j !== array[i] + 2)
-      {
-        arreglonuevo.push(array[i] + 2);
-      }
-      
-      else
-      {
-        console.log("Se interrumpió la ejecución");
-        break;
-      }
+      return "Se interrumpió la ejecución";
     }
+    arreglonuevo.push(suma);
   }
+  return arreglonuevo;
 }
 
 
@@ -284,19 +279,17 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   var arraynuevoaumentado2 = [];
-  for(var i = 0 ; i < numero.length ; i++)
+  var suma = numero;
+  for(var i = 0 ; i < 10 ; i++)
   {
-    suma = numero[i];
-    for(var j = 0; j < 10; j++)
-    {
-      if(j===5)
+      if(i===5)
       {
         continue;
       }
       suma += 2;
       arraynuevoaumentado2.push(suma);
-    }
   }
+  return arraynuevoaumentado2;
 }
 
 

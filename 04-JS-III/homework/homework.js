@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { suma } = require("../../02-JS-I/homework/homework");
+
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
@@ -281,14 +283,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var arraynuevoaumentado2 = [];
   for(var i = 0 ; i < numero.length ; i++)
   {
+    suma = numero[i];
     for(var j = 0; j < 10; j++)
     {
       if(j===5)
       {
-        
+        continue;
       }
+      suma += 2;
+      arraynuevoaumentado2.push(suma);
     }
   }
 }

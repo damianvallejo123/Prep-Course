@@ -8,8 +8,8 @@ function crearGato (nombre, edad) {
   // Tu código:
   var gato =
   {
-    nombre : this.nombre,
-    edad : this.edad,
+    "nombre" : this.nombre,
+    "edad" : this.edad,
     meow : function()
     {
       console.log ("Meow!");

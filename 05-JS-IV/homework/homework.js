@@ -10,11 +10,12 @@ function crearGato (nombre, edad) {
   {
     nombre: nombre,
     edad :  edad,
-    meow: function()
+    meow: ()
     {
       return "Meow!";
     }
   }
+  return gato;
   
 }
 

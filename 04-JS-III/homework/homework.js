@@ -1,37 +1,23 @@
 // No cambies los nombres de las funciones.
 
-const { suma } = require("../../02-JS-I/homework/homework");
-
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-<<<<<<< HEAD
   return array[0];
-=======
-  return(array[0]);
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-<<<<<<< HEAD
   return array[array.length - 1];
-=======
-  return(array[array.length-1]);
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-<<<<<<< HEAD
   return array.length;
-=======
-  return(array.length);
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
@@ -40,15 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-<<<<<<< HEAD
   for(var i = 0; i < array.length ; i++)
   {
     array[i] += 1;
-=======
-  for(var i = 0 ; i < array.length ; i++)
-  {
-    array[i]+= 1;
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
   }
   return array;
 }
@@ -59,11 +39,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // y devuelve el array
   // Tu código:
   array.push(elemento);
-<<<<<<< HEAD
   return(array);
-=======
-  return array;
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
@@ -83,24 +59,14 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-<<<<<<< HEAD
   var str = ""
   for(var i = 0; i < palabras.length-1 ; i++)
   {
     str += palabras[i] + " "
   }
-  str += palabras[palabras.length];
+  str += palabras[palabras.length -1];
 
-  return palabras;
-=======
-  var str = "";
-  for(var i = 0; i < palabras.length-1; i++)
-  {
-    str += palabras[i] + " ";
-  }
-  str += palabras[palabras.length-1];
   return str;
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
@@ -123,7 +89,6 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-<<<<<<< HEAD
   var suma = 0;
   for(var i = 0; i < numeros.length ; i++)
   {
@@ -131,31 +96,18 @@ function agregarNumeros(numeros) {
   }
   return suma;
 }
-=======
-  var sumatoria = 0;
-    for(var i = 0; i < numeros.length ; i++)
-    {
-      sumatoria+= numeros[i];
-    }
-    return sumatoria;
-  }
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
-<<<<<<< HEAD
   var sumatoria = 0;
   for(var i = 0; i < resultadosTest.length; i++)
   {
     sumatoria += resultadosTest[i];
   }
   return sumatoria/resultadosTest.length;
-=======
- return(agregarNumeros(resultadosTest)/resultadosTest.length);
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
@@ -164,21 +116,14 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
   var masgrande = numeros[0];
-<<<<<<< HEAD
   for(var i = 1 ; i < numeros.length ; i++)
-=======
-  for(var i = 1; i < numeros.length ; i++)
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
   {
     if(numeros[i] > masgrande)
     {
       masgrande = numeros[i];
     }
   }
-<<<<<<< HEAD
-=======
   return masgrande;
->>>>>>> e2cb7fd677d55c9525fae50d18ff9ca6bccea50c
 }
 
 
@@ -215,6 +160,7 @@ function cuentoElementos(arreglo){
         cantMayor18++;
       }
     }
+    return cantMayor18;
 
 }
 

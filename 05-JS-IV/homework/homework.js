@@ -7,8 +7,8 @@ function crearGato (nombre, edad) {
   // Devuelve el objeto
   // Tu código:
   
-    this.nombre = nombre,
-    this.edad =  edad,
+    this.nombre = nombre;
+    this.edad =  edad;
     meow = function()
     {
       return "Meow!";

@@ -8,8 +8,8 @@ function crearGato (nombre, edad) {
   // Tu código:
   const gato =
   {
-    nombre_obj: nombre,
-    edad_obj:  edad,
+    nombre: nombre,
+    edad:  edad,
     meow: () => "Meow!"
   }
   return gato;

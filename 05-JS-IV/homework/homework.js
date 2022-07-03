@@ -87,6 +87,18 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
+  for (const prop in objeto)
+  {
+    if(prop === propiedad)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
 }
 
 function verificarPassword (usuario, password) {
